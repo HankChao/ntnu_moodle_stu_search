@@ -73,6 +73,6 @@ with sync_playwright() as p:
         except Exception as e:
             print(f"第 {id} 筆發生錯誤: {e}")
 
-    save_to_json(sduid_list, "student_data.json")
-    save_to_json(error_id_list, "error_id_list.json")
+    save_to_json(sduid_list, "../stu_data/student_data.json")
+    save_to_json(error_id_list, "../stu_data/error_id_list.json")
     browser.close()

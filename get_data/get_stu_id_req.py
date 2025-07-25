@@ -14,8 +14,8 @@ cookies = {
     'MoodleSession': cookie_string,
 }
 
-id = 1
-end = 80000
+id = 21327
+end = 21327
 stu_id_list = []
 error_id_list = []
 
@@ -73,8 +73,8 @@ while True:
     id += 1
 
 # 儲存結果到 JSON 檔案
-save_to_json(stu_id_list, "student_data.json")
-save_to_json(error_id_list, "error_id_list.json")
+save_to_json(stu_id_list, "../stu_data/student_ori_data.json")
+save_to_json(error_id_list, "../stu_data/error_id_list.json")
 print(f"完成！共找到 {len(stu_id_list)} 筆學生資料，{len(error_id_list)} 筆錯誤")
 
 
